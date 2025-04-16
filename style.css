@@ -1,0 +1,323 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  background: #000;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  background: url(img/header.png);
+  background-size: 100% 100%;
+}
+
+nav {
+  height: 10vh;
+  padding: 0.5rem;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar {
+  display: flex;
+  gap: 1rem;
+}
+.navbar a {
+  padding: 0.5rem;
+}
+.cta-button {
+  border-radius: 0.5rem;
+  background: #000;
+}
+
+.hero {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.9) 90%,
+    rgba(0, 0, 0) 5%
+  );
+}
+.search-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-bar {
+  width: 75%;
+  height: 90%;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 250, 240, 0.5);
+  color: #000;
+  padding: 0.5rem;
+}
+.search-bar input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 1rem;
+}
+.search-bar input::placeholder {
+  color: black;
+}
+.banner {
+  margin-top: 10vh;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.banner h1 {
+  font-size: 3rem;
+  text-shadow: 1px 1px 2px black;
+}
+.banner h3{
+    text-shadow: 1px 1px 2px black;
+
+}
+
+section {
+  width: 100%;
+}
+/* Services */
+section h2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin: 1rem 0rem;
+  color: aliceblue;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.service-card {
+  width: 100%;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: azure;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-15px);
+}
+
+.service-card h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.service-card p {
+  font-size: 0.95em;
+}
+
+.service-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: crimson;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* HowTo */
+#how {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.how-content {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  gap: 1rem;
+}
+.how-text,
+.how-profile {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.how-profile img {
+  width: 30rem;
+  height: 80%;
+  border-radius: 3rem;
+}
+.steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-family: "Poppins", sans-serif;
+  margin: 40px auto;
+}
+.steps span {
+  padding: 10px 25px;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  width: max-content;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.steps span:hover {
+  color: #ff0066;
+}
+.steps .arrow {
+  background: none;
+  border: none;
+  box-shadow: none;
+  font-size: 24px;
+  color: #fff;
+}
+
+/* Provider CTA */
+
+#join {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.join-content {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: azure;
+  border-radius: 1.5rem;
+}
+.join-button {
+  background: linear-gradient(90deg, crimson, #4b2aad);
+  color: white;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* Testimonials */
+#testimonials {
+  height: 70vh;
+  padding: 1rem;
+}
+
+.testimonials-heading {
+  margin-bottom: 30px;
+}
+
+.testimonial-wrapper {
+  overflow-x: auto;
+}
+
+.testimonial-container {
+  display: flex;
+  gap: 20px;
+  min-width: 1200px;
+  padding: 1rem 2rem;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: azure;
+  flex: 0 0 300px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.testimonial-card:nth-child(n + 2) {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+#testimonials ::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, crimson, #4b2aad);
+  border-radius: 8px;
+}
+#testimonials ::-webkit-scrollbar {
+  height: 10px;
+}
+
+footer {
+  background: #1c1c1c;
+  color: #ccc;
+  padding: 20px;
+  text-align: center;
+}
+#troll-button {
+  color: black;
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  z-index: 9999;
+}
+#runawayBtn {
+  margin-top: 10px;
+  padding: 6px 14px;
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  background: linear-gradient(90deg, crimson, #4b2aad);
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  
+}
